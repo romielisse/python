@@ -1,0 +1,21 @@
+Year,Country,Coach,Captain
+1930,Uruguay,Alberto Suppici,José Nasazzi
+1934,Italy,Vittorio Pozzo,Gianpiero Combi
+1938,Italy,Vittorio Pozzo,Giuseppe Meazza
+1950,Uruguay,Juan López,Obdulio Varela
+1954,Germany,Sepp Herberger,Fritz Walter
+1958,Brazil,Vicente Feola,Hilderaldo Bellini
+1962,Brazil,Aymoré Moreira,Mauro Ramos
+1966,England,Alf Ramsey,Bobby Moore
+1970,Brazil,Mário Zagallo,Carlos Alberto
+1974,Germany,Helmut Schön,Franz Beckenbauer
+1978,Argentina,César Luis Menotti,Daniel Passarella
+1982,Italy,Enzo Bearzot,Dino Zoff
+1986,Argentina,Carlos Bilardo,Diego Maradona
+1990,Germany,Franz Beckenbauer,Lothar Matthäus
+1994,Brazil,Carlos Alberto Parreira,Dunga
+1998,France,Aimé Jacquet,Didier Deschamps
+2002,Brazil,Luiz Felipe Scolari,Cafu
+2006,Italy,Marcello Lippi,Fabio Cannavaro
+2010,Spain,Vicente del Bosque,Iker Casillas
+2014,Germany,Joachim Löw,Philipp Lahm
