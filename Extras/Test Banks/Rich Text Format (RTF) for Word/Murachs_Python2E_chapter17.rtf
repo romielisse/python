@@ -1,0 +1,3925 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\fmodern\fcharset0\fprq1 Courier New;
+}{\f2\fnil\fcharset0\fprq0 Times New Roman;
+}{\f3\fnil\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs26
+\cf1
+{Chapter 17: How to work with a database\par
+}\plain \b \f0
+\fs26
+\cf1
+{Murach's Python Programming (2nd Edition)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs36
+\cf1
+{\par
+}\plain \f0
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{1.}{\tab }\plain \f0
+\fs22
+\cf1
+{In a relational database, data is stored in tables that\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{consist of cells which may also be referred to as records\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{consist of rows (also known as fields) and cells (also known as records)\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{are identified by a primary key\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{consist of rows (also known as records) and columns (also known as fields)\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{2.}{\tab }\plain \f0
+\fs22
+\cf1
+{A column in a table \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{is modeled after a real-world entity or an abstract concept\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{represents an attribute of an entity\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{contains a set of values for one instance of an entity\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{represents the record of a single entity\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{3.}{\tab }\plain \f0
+\fs22
+\cf1
+{A row in a table \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{is modeled after a real-world entity or an abstract concept\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{represents an attribute of an entity\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{contains a set of values for one instance of an entity\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{defines the data type for each attribute\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{4.}{\tab }\plain \f0
+\fs22
+\cf1
+{The column that uniquely identifies each row in a table is the\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{primary key\cell
+}{b.}{\cell
+}{foreign key\cell
+}{c.}{\cell
+}{final key\cell
+}{d.}{\cell
+}{row key\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{5.}{\tab }\plain \f0
+\fs22
+\cf1
+{A column in one table that identifies a related row in another table is a\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{primary key\cell
+}{b.}{\cell
+}{foreign key\cell
+}{c.}{\cell
+}{final key\cell
+}{d.}{\cell
+}{row key\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{6.}{\tab }\plain \f0
+\fs22
+\cf1
+{When a row in one table is related to multiple rows in another table, that relat
+ionship is known as a\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{one-to-multiple relationship\cell
+}{c.}{\cell
+}{simple relationship\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{one-to-many relationship\cell
+}{d.}{\cell
+}{complex relationship\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{7.}{\tab }\plain \f0
+\fs22
+\cf1
+{Assume there is a relational database with the following tables and columns:\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{Genre              Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{========           ======\par
+}\plain \b \f1
+\fs18
+\cf1
+{genreID            bookID\par
+}\plain \b \f1
+\fs18
+\cf1
+{genreName          genreID\par
+}\plain \b \f1
+\fs18
+\cf1
+{                   bookTitle}\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sb120\sa120{Here, the first column for each table is the primary key for the table. As a res
+ult, the genreID column creates a\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{one-to-many relationship between the Genre and Book tables.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{many-to-one relationship between the Genre and Book tables.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{one-to-one relationship between the Genre and Book tables.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{many-to-many relationship between the Genre and Book tables.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{8.}{\tab }\plain \f0
+\fs22
+\cf1
+{In a database table, the data type for a column defines\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{whether the column is the primary key}\plain \b \f1
+\fs18
+\cf1
+{\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{whether the column can contain null values\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{whether the column has a default value\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{the type of data that the column can store\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{9.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following combinations of column properties forces a value to be pr
+ovided for the column when a new row is added?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Foreign key = Y, Allow Null = N}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Foreign key = Y, Allow Null = Y}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Default Value = Null, Allow Null = N}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Default Value = Null, Allow Null = Y}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{10.}{\tab }\plain \f0
+\fs22
+\cf1
+{When you insert a new row into a SQLite database, it automatically generates a v
+alue for\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{any column that has an orphaned key}\plain \b \f1
+\fs18
+\cf1
+{\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{any column that\'92
+s defined as a foreign key\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{the column that\'92
+s defined as the primary key\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{any column that doesn\'92
+t allow null values\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sb120\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{11.}{\tab }\plain \f0
+\fs22
+\cf1
+\plain \f2
+\fs22
+\cf1
+{What does the following SELECT statement return?\par
+}\plain \f2
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f3
+\fs18
+\cf1
+{SELECT balance, num\par
+}\plain \b \f3
+\fs18
+\cf1
+{FROM Account\par
+}\plain \b \f3
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{WHERE balance < 0\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{All columns from every row of the Account table}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{Two columns from every row of the Account table}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{All columns from the Account table for all rows that have a balance of less than
+ 0}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{Two columns from the Account table for all rows that have a balance of less than
+ 0}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{12.}{\tab }\plain \f0
+\fs22
+\cf1
+{What will the following SELECT statement return?\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{SELECT bookTitle\par
+}\plain \b \f1
+\fs18
+\cf1
+{FROM Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{WHERE pages > 100\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{ORDER BY pages ASC\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}{All titles in the Book table that are more than 100 pages long, sorted by lengt
+h from shortest to longest\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{All titles in the Book table that are more than 100 pages long, sorted by title
+ from A to Z\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{All titles in the Book table that are more than 100 pages long, sorted by lengt
+h from longest to shortest\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{The number of pages of all books in the Book table that are longer than 100 pag
+es, sorted from least number of pages to most number of pages\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{13.}{\tab }\plain \f0
+\fs22
+\cf1
+{What does this SELECT statement do?\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{SELECT bookTitle, genreName, pages\par
+}\plain \b \f1
+\fs18
+\cf1
+{FROM Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{     JOIN Genre ON Genre.genreID = Book.genreID\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{WHERE pages > 100\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{It returns three columns from the Book table.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{It returns four columns from the Book and Genre tables.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{It joins the Book and Genre tables based on values stored in the genreID column
+ and returns three columns from those tables.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{It joins the Book and Genre tables based on values stored in the genreID column
+ and returns four columns from those tables.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sb120\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{14.}{\tab }\plain \f0
+\fs22
+\cf1
+\plain \f2
+\fs22
+\cf1
+{What does the following SQL statement do?\par
+}\plain \f2
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f3
+\fs18
+\cf1
+{INSERT INTO Genre (genreName)\par
+}\plain \b \f3
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{VALUES ('Adventure')\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{It adds a row to the Genre table that has a value of \'91
+Adventure\'92
+ for the genreNa
+me column.}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{It updates the Genre table for all rows that have values of \'91
+Adventure\'92
+ for the 
+genreName column.}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{It creates a table named Genre that contains all rows where the genreName column
+ has a value of \'91
+Adventure\'92
+.}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \f2
+\fs22
+\cf1
+{It inserts a genreName column into the Genre table and gives it a default value 
+of \'91
+Adventure\'92
+.}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{15.}{\tab }\plain \f0
+\fs22
+\cf1
+{The UPDATE statement can be used to update a table by\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{adding a new row of data\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{modifying a row of existing data\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{retrieving a row of existing data\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{removing one or more rows of existing data\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{16.}{\tab }\plain \f0
+\fs22
+\cf1
+{The INSERT, UPDATE, and DELETE statements \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{modify the data in a database but do not return a result set\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{modify the data in a database and return the changed the results\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{must include a WHERE clause\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{must include a value for every column in the table\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{17.}{\tab }\plain \f0
+\fs22
+\cf1
+{Before you can use Python to execute a SQL statement against a SQLite database, 
+you typically import the sqlite3 module,\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{fetch the database, and open the statement\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{open the statement, and fetch the database\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{connect to the database, and use the connection to get a cursor\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{get a cursor, and use the cursor to connect to the database\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{18.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which method runs a SQL query in a Python program?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{close()\cell
+}{b.}{\cell
+}{cursor()\cell
+}{c.}{\cell
+}{execute()\cell
+}{d.}{\cell
+}{query()\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{19.}{\tab }\plain \f0
+\fs22
+\cf1
+{The fetchall() method of the cursor object returns\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{all rows in the result set\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{all remaining rows in the result set\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{all rows in the database table\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{all remaining rows in the database table\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{20.}{\tab }\plain \f0
+\fs22
+\cf1
+{To access columns of a row by name, you need to\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{set the row_factory attribute of the connection object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{call the enableColNames() method of the connection object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{call the enableColNames() method from the cursor object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{call the fetchall_withnames() method of the cursor object\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{21.}{\tab }\plain \f0
+\fs22
+\cf1
+{The fetchone() method of the cursor object typically\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{returns a list that contains one row of the result set.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{returns a tuple for the next row from the result set.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{returns the value of the next column in the current row.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{returns a list that contains the first value from each row.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{22.}{\tab }\plain \f0
+\fs22
+\cf1
+{When you execute INSERT, DELETE, or UPDATE statements in a Python program, you n
+eed to save the changes to the database by calling the\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{execute() method of the connection object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{commit() method of the connection object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{save() method of the cursor object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{update() method of the cursor object\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{23.}{\tab }\plain \f0
+\fs22
+\cf1
+{After you use DB Browser to open a SQLite database, how can you execute a SQL st
+atement against the database?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Click the Browse Tables tab, enter the SQL statement, and click the Execute but
+ton.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Click the Browse Tables tab, click the Execute button, and enter the SQL statem
+ent.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Click the Execute SQL tab, enter the SQL statement, and click the Execute SQL b
+utton.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Click the Execute SQL tab, click the Execute SQL button, and enter the SQL stat
+ement.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{import sqlite3\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{from contextlib import closing\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{conn = sqlite3.connect("books.sqlite")\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{conn.row_factory = sqlite3.Row\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{with closing(conn.cursor()) as c:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    query = '''SELECT * FROM Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{               WHERE pages > ?'''\par
+}\plain \b \f1
+\fs18
+\cf1
+{    c.execute(query, (100,))\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{    books = c.fetchall()\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{for book in books:\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{    print(f"\{book["name"]\} | \{book["author"]\} | \{book["pages"]\}")\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{name = "The Case of the Killer Kangaroo"\par
+}\plain \b \f1
+\fs18
+\cf1
+{author = "Jane Doe"\par
+}\plain \b \f1
+\fs18
+\cf1
+{pages = 408\par
+}\plain \b \f1
+\fs18
+\cf1
+{genreID = 1\par
+}\plain \b \f1
+\fs18
+\cf1
+{with closing(conn.cursor()) as c:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    query = '''INSERT INTO Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{               (name, author, pages, genreID)\par
+}\plain \b \f1
+\fs18
+\cf1
+{               VALUES (?, ?, ?, ?)'''\par
+}\plain \b \f1
+\fs18
+\cf1
+{    c.execute(query, (name, author, pages, genreID))\par
+}\plain \b \f1
+\fs18
+\cf1
+{    conn.commit()\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{print(name, "was inserted.")\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{author = "Katie Kanga"\par
+}\plain \b \f1
+\fs18
+\cf1
+{with closing(conn.cursor()) as c:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    query = '''UPDATE Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{               SET author = ?\par
+}\plain \b \f1
+\fs18
+\cf1
+{               WHERE name = ?'''\par
+}\plain \b \f1
+\fs18
+\cf1
+{    c.execute(query, (author, name))\par
+}\plain \b \f1
+\fs18
+\cf1
+{    conn.commit()\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{print(name, " was updated.")}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{24.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1}\plain \f0
+\fs22
+\cf1
+{: Which line opens the connection to the database?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{conn.row_factory = sqlite3.Row\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{books = c.fetchall()\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{conn = sqlite3.connect("books.sqlite")\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{import sqlite3}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{25.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1}\plain \f0
+\fs22
+\cf1
+{: What is the name of the database file?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{books.sqlite\cell
+}{b.}{\cell
+}{sqlite3\cell
+}{c.}{\cell
+}{Book.sqlite\cell
+}{d.}{\cell
+}{sqlite.Book\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{26.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1}\plain \f0
+\fs22
+\cf1
+{: Which statement makes sure that the cursor object is closed so its resources a
+re released to the system?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{conn.commit()\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{with closing(conn.cursor()) as c:\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{conn.row_factory = sqlite3.Row\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{this program does not make sure the cursor object is closed\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{27.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1}\plain \f0
+\fs22
+\cf1
+{: Which statement allows the program to access column values by name instead of 
+by index?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{INSERT INTO Book(name, author, pages, genreID)\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{books = c.fetchall()\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{conn.row_factory = sqlite3.Row\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{print(f"\{book["name"]\} | \{book["author"]\} | \{book["pages"]\}")}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{28.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1}\plain \f0
+\fs22
+\cf1
+{: What values does the INSERT statement add to the Book table?\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{name="The Case of the Killer Kangaroo", author="Katie Kanga", \par
+}\plain \b \f1
+\fs18
+\cf1
+{pages=408, genreID=1\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{name="The Case of the Killer Kangaroo", author="Jane Doe", \par
+}\plain \b \f1
+\fs18
+\cf1
+{pages=408, genreID=1\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{author="The Case of the Killer Kangaroo", name="Katie Kanga", \par
+}\plain \b \f1
+\fs18
+\cf1
+{pages=408, genreID=1\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{author="The Case of the Killer Kangaroo", name="Jane Doe", \par
+}\plain \b \f1
+\fs18
+\cf1
+{pages=408, genreID=1}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{29.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1}\plain \f0
+\fs22
+\cf1
+{: After the program executes the UPDATE statement, what data does the database c
+ontain for the book named \'93
+The Case of the Killer Kangaroo\'94
+?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{author="Katie Kanga", pages=408, genreID=1\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{author="Jane Doe", pages=408, genreID=1\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{author="Katie Kanga", genreID=408, pages=1\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{author="Jane Doe", genreID=408, pages=1}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{30.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 17-1}\plain \f0
+\fs22
+\cf1
+{: To delete the book named \'93
+The Case of the Killer Kangaroo\'94
+ from the database, 
+you could use the following statements:\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{query =  '''DELETE FROM Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{            WHERE name = ?'''\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{c.execute(query, name)\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{query =  '''DELETE FROM Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{            WHERE name = ?'''\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{c.execute(query, (name,))\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{query =  '''DELETE FROM Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{            WHERE author = ?'''\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{c.execute(query, (name,))\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{query =  '''DELETE FROM Book\par
+}\plain \b \f1
+\fs18
+\cf1
+{            WHERE author = ?'''\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{c.execute(query, name)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B\par
+\pard
+}}

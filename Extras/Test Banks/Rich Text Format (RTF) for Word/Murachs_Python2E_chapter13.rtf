@@ -1,0 +1,1962 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\fnil\fcharset0\fprq2 Times New Roman;
+}{\f2\fmodern\fcharset0\fprq1 Courier New;
+}{\f3\fnil\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs26
+\cf1
+{Chapter 13: How to work with recursion and algorithms\par
+}\plain \b \f0
+\fs26
+\cf1
+{Murach's Python Programming (2nd Edition)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs36
+\cf1
+{\par
+}\plain \f0
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{1.}{\tab }\plain \f0
+\fs22
+\cf1
+{Recursion occurs when  \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{a function contains a loop\cell
+}{c.}{\cell
+}{an infinite loop is executed\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{a function calls itself\cell
+}{d.}{\cell
+}{a for loop is nested inside a while loop\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{2.}{\tab }\plain \f0
+\fs22
+\cf1
+{Each time a function calls itself, Python\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{removes all previous function calls from the stack\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{removes the previous function call from the stack\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{adds the function call to the stack\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{executes the function without placing the function call on the stack\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{3.}{\tab }\plain \f0
+\fs22
+\cf1
+{In a recursive function, the simplest form of the problem is known as\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{a deferred action\cell
+}{c.}{\cell
+}{the base case\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{recursion depth\cell
+}{d.}{\cell
+}{maximum depth\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{4.}{\tab }\plain \f0
+\fs22
+\cf1
+{Each call to a recursive function is known as \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{a deferred action\cell
+}{c.}{\cell
+}{the base case\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{recursion depth\cell
+}{d.}{\cell
+}{maximum depth\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{5.}{\tab }\plain \f0
+\fs22
+\cf1
+{The number of recursive function calls that are on the stack at the same time is
+ referred to as\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{a deferred action\cell
+}{c.}{\cell
+}{the base case\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{recursion depth\cell
+}{d.}{\cell
+}{maximum depth\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{6.}{\tab }\plain \f0
+\fs22
+\cf1
+{A }\plain \f1
+\fs22
+\cf1
+{step-by-step }\plain \f0
+\fs22
+\cf1
+{series of operations used to perform calculations, process data, or automate rea
+soning tasks is known as\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{iteration\cell
+}{c.}{\cell
+}{an equation\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{an algorithm\cell
+}{d.}{\cell
+}{recursion\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{7.}{\tab }\plain \f0
+\fs22
+\cf1
+{A recursive algorithm that uses two recursive calls to split into two directions
+ is known as}\plain \b \f2
+\fs18
+\cf1
+{ \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{tree recursion\cell
+}{c.}{\cell
+}{factorial recursion\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{a Fibonacci series\cell
+}{d.}{\cell
+}{split recursion\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{8.}{\tab }\plain \f0
+\fs22
+\cf1
+{When using tree recursion, \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{the code runs extremely efficiently\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{the number of recursive calls grows exponentially\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{Python never calculates a branch of the tree more than once\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{there can only be two branches of the tree\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-1\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f2
+\fs18
+\cf1
+{1.  def add_numbers(number):\par
+}\plain \b \f2
+\fs18
+\cf1
+{2.      if number == 0:\par
+}\plain \b \f2
+\fs18
+\cf1
+{3.          return number\par
+}\plain \b \f2
+\fs18
+\cf1
+{4.      else:\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{5.          return number + add_numbers(number - 1)\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{6.  def main():\par
+}\plain \b \f2
+\fs18
+\cf1
+{7.      number = input("Enter a number: ")\par
+}\plain \b \f2
+\fs18
+\cf1
+{8.      number = int(number)\par
+}\plain \b \f2
+\fs18
+\cf1
+{9.      total = add_numbers(number)\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{10.     print(f"The sum of all numbers from 0 to \{number\} is \{total\}")\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{11. if __name__ == "__main__":\par
+}\plain \b \f2
+\fs18
+\cf1
+{12.     main()}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{9.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-1}\plain \f0
+\fs22
+\cf1
+{: What line identifies the base case for the recursive function?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{2\cell
+}{b.}{\cell
+}{3\cell
+}{c.}{\cell
+}{4\cell
+}{d.}{\cell
+}{5\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{10.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-1}\plain \f0
+\fs22
+\cf1
+{: How many times is the add_numbers() function called if the user enters 4 at th
+e prompt?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{1\cell
+}{b.}{\cell
+}{3\cell
+}{c.}{\cell
+}{4\cell
+}{d.}{\cell
+}{5\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{11.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-1}\plain \f0
+\fs22
+\cf1
+{: To sum all numbers from 3 to the number the user enters, you would change line
+ 10 to\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f3
+\fs18
+\cf1
+{print(f"The sum of all numbers from 3 to \{number\} is \{total\}")\par
+}\plain \b \f3
+\fs18
+\cf1
+\plain \f0
+\fs22
+\cf1
+{and\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{change line 9 to:}\plain \b \f2
+\fs18
+\cf1
+{ total = add_numbers(number + 3)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{change line 5 to:}\plain \b \f2
+\fs18
+\cf1
+{ }\plain \b \f3
+\fs18
+\cf1
+{return number + add_numbers(number - 3)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{change line 2 to:}\plain \b \f2
+\fs18
+\cf1
+{ if number == 3}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{no other changes are necessary\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{12.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-1}\plain \f0
+\fs22
+\cf1
+{: Which of the following functions performs the same task as the add_numbers() f
+unction in the code example?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{def add_numbers(number):\par
+}\plain \b \f2
+\fs18
+\cf1
+{    total = 0\par
+}\plain \b \f2
+\fs18
+\cf1
+{    for n in range(number + 1):\par
+}\plain \b \f2
+\fs18
+\cf1
+{        total += n\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{    return total}\plain \f0
+\fs22
+\cf1
+{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{def add_numbers(number):\par
+}\plain \b \f2
+\fs18
+\cf1
+{    total = number\par
+}\plain \b \f2
+\fs18
+\cf1
+{    for n in range(number + 1):\par
+}\plain \b \f2
+\fs18
+\cf1
+{        total += n\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{    return total}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{def add_numbers(number):\par
+}\plain \b \f2
+\fs18
+\cf1
+{    total = number\par
+}\plain \b \f2
+\fs18
+\cf1
+{    for n in range(number - 1):\par
+}\plain \b \f2
+\fs18
+\cf1
+{        total += n\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{    return total}\plain \f0
+\fs22
+\cf1
+{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f2
+\fs18
+\cf1
+{def add_numbers(number):\par
+}\plain \b \f2
+\fs18
+\cf1
+{    total = 0\par
+}\plain \b \f2
+\fs18
+\cf1
+{    while number > 0:\par
+}\plain \b \f2
+\fs18
+\cf1
+{        total += number\par
+}\plain \b \f2
+\fs18
+\cf1
+{        number += 1\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{    return total}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-2\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f2
+\fs18
+\cf1
+{def calculate(base, exponent):\par
+}\plain \b \f2
+\fs18
+\cf1
+{    if exponent == 0:\par
+}\plain \b \f2
+\fs18
+\cf1
+{        return 1\par
+}\plain \b \f2
+\fs18
+\cf1
+{    elif exponent % 2 == 0:\par
+}\plain \b \f2
+\fs18
+\cf1
+{        return calculate(base * base, exponent / 2)\par
+}\plain \b \f2
+\fs18
+\cf1
+{    else:\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{        return base * calculate(base * base, (exponent - 1) / 2)\par
+}\plain \b \f2
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{def main():\par
+}\plain \b \f2
+\fs18
+\cf1
+{    base = int(input("Enter a number for the base: "))\par
+}\plain \b \f2
+\fs18
+\cf1
+{    exponent = int(input("Enter the exponent: "))\par
+}\plain \b \f2
+\fs18
+\cf1
+{    result = calculate(base, exponent)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{13.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-2:}\plain \f0
+\fs22
+\cf1
+{ What is the base case for this recursive example?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{exponent == 0}\plain \f0
+\fs22
+\cf1
+{\cell
+}{c.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{base = 1}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{base == 0}\plain \f0
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f3
+\fs18
+\cf1
+{exponent % 2 = 0}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{14.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-2:}\plain \f0
+\fs22
+\cf1
+{ If the user enters 2 for the base and 8 for the exponent, how many times will t
+he calculate() function be called?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{2\cell
+}{b.}{\cell
+}{4\cell
+}{c.}{\cell
+}{8\cell
+}{d.}{\cell
+}{9\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{15.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 13-2:}\plain \f0
+\fs22
+\cf1
+{ What will be the value of the variable named result if the user enters 3 and 4 
+(in that order) at the prompts?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2069
+\clvertalt
+\cellx2429
+\clvertalt
+\cellx4183
+\clvertalt
+\cellx4543
+\clvertalt
+\cellx6297
+\clvertalt
+\cellx6657
+\clvertalt
+\cellx8411
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{81\cell
+}{b.}{\cell
+}{12\cell
+}{c.}{\cell
+}{64\cell
+}{d.}{\cell
+}{7\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A\par
+\pard
+}}

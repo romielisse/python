@@ -1,0 +1,4465 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\fmodern\fcharset0\fprq1 Courier New;
+}{\f2\fnil\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs26
+\cf1
+{Chapter 04: How to define and use functions and modules\par
+}\plain \b \f0
+\fs26
+\cf1
+{Murach's Python Programming (2nd Edition)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs36
+\cf1
+{\par
+}\plain \f0
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{1.}{\tab }\plain \f0
+\fs22
+\cf1
+{To define a function, you code the def keyword and the name of the function foll
+owed by\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{a set of parentheses\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{a set of parentheses that contains zero or more arguments\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{a set of parentheses that contains one or more arguments\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{a set of parentheses that contains a list of the local variables \cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{2.}{\tab }\plain \f0
+\fs22
+\cf1
+{To call a function, you code the function name and \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{a set of parentheses \cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{a set of parentheses that contains zero or more arguments\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{a set of parentheses that contains one or more arguments\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{a set of parentheses that contains a list of the local variables\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{3.}{\tab }\plain \f0
+\fs22
+\cf1
+{A return statement\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{must be coded within every function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{can be used to return a local variable to the calling function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{can be used to allow the function to modify the value of a global variable\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{can only be used once in each function\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{4.}{\tab }\plain \f0
+\fs22
+\cf1
+{The best way to call the main() function of a program is to code\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{main()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{an if statement that calls the main() function only if the function exists\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{an if statement that calls the main() function only if the current module is th
+e main module\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{a while statement that calls the main() function in each loop\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{5.}{\tab }\plain \f0
+\fs22
+\cf1
+{To assign a default value to an argument when you define a function, you\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{code the default value instead of its name in the arguments list\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{set the default value for the argument in the first line of code inside the fun
+ction\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{code the name of the argument, the assignment operator (}\plain \b \f1
+\fs18
+\cf1
+{=}\plain \f0
+\fs22
+\cf1
+{), and the default value\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{code the name of the argument, the default operator (}\plain \b \f1
+\fs18
+\cf1
+{:}\plain \f0
+\fs22
+\cf1
+{), and the default value\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{6.}{\tab }\plain \f0
+\fs22
+\cf1
+{To call a function with named arguments, you code the \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{name of each argument, an equals sign, and the value or variable that\'92
+s being p
+assed\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{values that you\'92
+re passing in the same sequence that the names are defined in t
+he function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{values that you\'92
+re passing at the beginning of the function call\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{values that you\'92
+re passing at the end of the function call, followed by the nam
+es that correspond with the values\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{7.}{\tab }\plain \f0
+\fs22
+\cf1
+{A local variable is defined\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{inside a function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{inside the main() function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{inside an if statement\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{outside of all functions\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{8.}{\tab }\plain \f0
+\fs22
+\cf1
+{A global variable\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{is defined inside the main() function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{cannot be modified inside a function \cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{cannot be accessed from within a function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{is defined outside of all functions\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{9.}{\tab }\plain \f0
+\fs22
+\cf1
+{A file that contains reusable code is called a \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{module\cell
+}{c.}{\cell
+}{function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{hierarchy chart\cell
+}{d.}{\cell
+}{namespace\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{10.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following statements is }\plain \b \i \f0
+\fs22
+\cf1
+{not }\plain \f0
+\fs22
+\cf1
+{true about the documentation of a module?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{The documentation can describe each function in the module.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{You can use regular Python comments to document the functions of the module.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{You can call the help() function from the interactive shell to view the documen
+tation.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{You can use Python docstrings to document the functions of the module.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{11.}{\tab }\plain \f0
+\fs22
+\cf1
+{You can use a type hint to document all but one of the following. Which one is i
+t?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{the data type of a value returned by a function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{the data type of an argument received by a function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{the data type of a global variable used by a function\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{12.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following statements imports a module into the default namespace?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{import temperature\cell
+}\plain \f0
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{from temperature import *\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{import temperature as temp\cell
+}\plain \f0
+\fs22
+\cf1
+{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{import temperature as t}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{13.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following statements imports a module into the global namespace?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{import temperature\cell
+}\plain \f0
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{from temperature import *\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{import temperature as temp\cell
+}\plain \f0
+\fs22
+\cf1
+{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{import temperature as global }\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{14.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which statement would you use to call the print_name() function from a module na
+med address that has been imported with this statement?\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{import address as a\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{address.print_name(name)\cell
+}\plain \f0
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{print_name(name)\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{a.print_name(name)\cell
+}\plain \f0
+\fs22
+\cf1
+{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{global.print_name(name)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{15.}{\tab }\plain \f0
+\fs22
+\cf1
+{The default namespace for a module is\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{the global namespace\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{the name of the module followed by _default\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{the first letter of the module name \cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{the same as the name of the module\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{16.}{\tab }\plain \f0
+\fs22
+\cf1
+{If you import two modules into the global namespace and each has a function name
+d get_value(), \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{an error occurs\cell
+}{c.}{\cell
+}{an exception occurs\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{a name collision occurs\cell
+}{d.}{\cell
+}{the program crashes\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{17.}{\tab }\plain \f0
+\fs22
+\cf1
+{Before you can use a standard module like the random module, you need to\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{import the module\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{import the module into a custom namespace\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{import the module into the global namespace\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{import the module into its default namespace\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{18.}{\tab }\plain \f0
+\fs22
+\cf1
+{ Which of the following is }\plain \b \i \f0
+\fs22
+\cf1
+{not}\plain \f0
+\fs22
+\cf1
+{ true of hierarchy charts?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{Function names should start with a verb and indicate what the functions do.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{Each function should do only what is related to the function name.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{The top level box should be for the main() function.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Related functions should be combined into a single function.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-1}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{def get_username(first, last):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    s = f"\{first\}.\{last\}"\par
+}\plain \b \f1
+\fs18
+\cf1
+{    return s.lower()\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{def main():\par
+}\plain \b \f1
+\fs18
+\cf1
+{    first_name = input("Enter your first name: ")\par
+}\plain \b \f1
+\fs18
+\cf1
+{    last_name = input("Enter your last name: ")\par
+}\plain \b \f1
+\fs18
+\cf1
+{    username = get_username(first_name, last_name)\par
+}\plain \b \f1
+\fs18
+\cf1
+{    print(f"Your username is: \{username\}")\par
+}\plain \b \f1
+\fs18
+\cf1
+{    \par
+}\plain \b \f1
+\fs18
+\cf1
+{if __name__ == "__main__":\par
+}\plain \b \f1
+\fs18
+\cf1
+{    main()}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{19.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-1}\plain \f0
+\fs22
+\cf1
+{: What function is called first when the program runs?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{get_username()\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{main()\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{if __name__ == "__main__"\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{input("Enter your first name: ")}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{20.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-1}\plain \f0
+\fs22
+\cf1
+{: What arguments are defined by the get_username() function?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{first, last\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{s, first, last\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{first_name, last_name\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{username}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{21.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-1}\plain \f0
+\fs22
+\cf1
+{: If the user enters \'91
+Lopez\'92
+ for the first prompt in main() and \'91
+Maria\'92
+ for the 
+second prompt, what will display?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Maria.Lopez\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{maria.lopez\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{lopez.maria\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Lopez.Maria}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{22.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-1}\plain \f0
+\fs22
+\cf1
+{: What is the scope of the variable named s?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{global\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{local\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{global in main() but local in get_username()\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{local in main() but global in get_username()\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-2\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f2
+\fs18
+\cf1
+{def get_volume(width, height, length=2):\par
+}\plain \b \f2
+\fs18
+\cf1
+{    volume = width * height * length\par
+}\plain \b \f2
+\fs18
+\cf1
+{    return volume\par
+}\plain \b \f2
+\fs18
+\cf1
+{\par
+}\plain \b \f2
+\fs18
+\cf1
+{def main():\par
+}\plain \b \f2
+\fs18
+\cf1
+{    l = 3\par
+}\plain \b \f2
+\fs18
+\cf1
+{    w = 4\par
+}\plain \b \f2
+\fs18
+\cf1
+{    h = 5\par
+}\plain \b \f2
+\fs18
+\cf1
+{    v = get_volume(l, w, h)\par
+}\plain \b \f2
+\fs18
+\cf1
+{    print(v)\par
+}\plain \b \f2
+\fs18
+\cf1
+{    \par
+}\plain \b \f2
+\fs18
+\cf1
+{if __name__ == "__main__":\par
+}\plain \b \f2
+\fs18
+\cf1
+{    main()}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{23.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-2}\plain \f0
+\fs22
+\cf1
+{: What value is passed to the height argument by the call to the get_volume() fu
+nction?\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}{2\cell
+}{c.}{\cell
+}{4\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{3\cell
+}{d.}{\cell
+}{5\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{24.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-2}\plain \f0
+\fs22
+\cf1
+{: When this program runs, what does it print to the console?\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}{24\cell
+}{c.}{\cell
+}{60\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{40\cell
+}{d.}{\cell
+}{v\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{25.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-2}\plain \f0
+\fs22
+\cf1
+{: If you add the following code to the end of the main() method, what does it pr
+int to the console?\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{print(get_volume(10, 2))\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}{20\cell
+}{c.}{\cell
+}{60\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{40\cell
+}{d.}{\cell
+}{Nothing, it causes an error\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-3\par
+}\plain \b \f0
+\fs22
+\cf1
+{main program:\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{import arithmetic as a\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{def main():\par
+}\plain \b \f1
+\fs18
+\cf1
+{    num1 = 5\par
+}\plain \b \f1
+\fs18
+\cf1
+{    num2 = 6\par
+}\plain \b \f1
+\fs18
+\cf1
+{    result = a.add(num1, num2)\par
+}\plain \b \f1
+\fs18
+\cf1
+{    print("The sum is", result)\par
+}\plain \b \f1
+\fs18
+\cf1
+{    \par
+}\plain \b \f1
+\fs18
+\cf1
+{if __name__ == "__main__":\par
+}\plain \b \f1
+\fs18
+\cf1
+{    main()\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{arithmetic module:\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{def add(x = 4, y = 2):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    z = x + y\par
+}\plain \b \f1
+\fs18
+\cf1
+{    return z}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{26.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-3}\plain \f0
+\fs22
+\cf1
+{: What will be displayed after the code runs?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{The sum is 11\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\plain \b \f1
+\fs18
+\cf1
+{The sum is 6\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\plain \b \f1
+\fs18
+\cf1
+{The sum is 17}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Nothing, the code causes an error\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{27.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-3}\plain \f0
+\fs22
+\cf1
+{: What  are the values of x and y after the add() function is called from the ma
+in() function?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{9, 8\cell
+}{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{4, 2\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{5, 6\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{these variables don\'92
+t exist\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-4\par
+}\plain \b \f0
+\fs22
+\cf1
+{main program:\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{import arithmetic as a\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{def multiply(num1, num2):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    product = num1 * num2\par
+}\plain \b \f1
+\fs18
+\cf1
+{    result = a.add(product, product)\par
+}\plain \b \f1
+\fs18
+\cf1
+{    return result\par
+}\plain \b \f1
+\fs18
+\cf1
+{    \par
+}\plain \b \f1
+\fs18
+\cf1
+{def main():\par
+}\plain \b \f1
+\fs18
+\cf1
+{    num1 = 4\par
+}\plain \b \f1
+\fs18
+\cf1
+{    num2 = 3\par
+}\plain \b \f1
+\fs18
+\cf1
+{    answer = multiply(num1, num2)\par
+}\plain \b \f1
+\fs18
+\cf1
+{    print("The answer is", answer)\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{if __name__ == "__main__":\par
+}\plain \b \f1
+\fs18
+\cf1
+{    main()\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{arithmetic module:\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{def add(x, y):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    z = x + y\par
+}\plain \b \f1
+\fs18
+\cf1
+{    return z}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{28.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-4}\plain \f0
+\fs22
+\cf1
+{: What are the values of x and y in the add() function?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{4, 3\cell
+}{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{12, 12\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{5, 6\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{these variables don\'92
+t exist\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{29.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-4}\plain \f0
+\fs22
+\cf1
+{: The add() function is called by \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{the main() function\cell
+}{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{the arithmetic module\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{the multiply() function\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{the result statement\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{30.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 4-4}\plain \f0
+\fs22
+\cf1
+{: When this code runs, what does it print to the console?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{The answer is 28\cell
+}\plain \f0
+\fs22
+\cf1
+{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\plain \b \f1
+\fs18
+\cf1
+{The answer is  7\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\plain \b \f1
+\fs18
+\cf1
+{The answer is 12\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\plain \b \f1
+\fs18
+\cf1
+{The answer is  24}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{31.}{\tab }\plain \f0
+\fs22
+\cf1
+{Assuming the random module has been imported into its default namespace, which o
+f the following could possibly result in a value of 0.94?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randfloat()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randint(0, 1)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randint(0, 1) / 100}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.random()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{32.}{\tab }\plain \f0
+\fs22
+\cf1
+{Assuming the random module has been imported into its default namespace, which o
+f the following could be used to simulate a coin toss where 0 = heads and 1 = tai
+ls?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.coin()\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randint(0, 1)\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randint(0, 2)\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.random()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{33.}{\tab }\plain \f0
+\fs22
+\cf1
+{Assuming the random module has been imported into its default namespace, which o
+f the following could be used to generate a random even integer from 2 through 20
+0?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random(1, 100) * 2\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randint(2, 200, 2)\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randrange(2, 202, 2)\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f1
+\fs18
+\cf1
+{number = random.randrange(2, 200, 2)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C\par
+\pard
+}}

@@ -1,0 +1,4214 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\fmodern\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs26
+\cf1
+{Chapter 14: How to define and use your own classes\par
+}\plain \b \f0
+\fs26
+\cf1
+{Murach's Python Programming (2nd Edition)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs36
+\cf1
+{\par
+}\plain \f0
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{1.}{\tab }\plain \f0
+\fs22
+\cf1
+{The Unified Modeling Language\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{describes the classes and objects of an application\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{can be used to write the pseudo code for a class\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{can be used to write the code that defines a class\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{is a scripting language for working with objects\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{2.}{\tab }\plain \f0
+\fs22
+\cf1
+{A UML class diagram \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{describes the functions of one or more modules\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{shows the state of one of more classes\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{describes the attributes and methods of one or more classes\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{shows the relationship between the identity of an object and its state\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{3.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following defines the type of data that an object can store?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{data structures\cell
+}{c.}{\cell
+}{attributes of a class\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{methods of a class\cell
+}{d.}{\cell
+}{instances of a class\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{4.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following defines the tasks that an object can perform?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{data structures\cell
+}{c.}{\cell
+}{attributes of a class\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{methods of a class\cell
+}{d.}{\cell
+}{instances of a class\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{5.}{\tab }\plain \f0
+\fs22
+\cf1
+{Once you create an object from a class, the object\'92
+s __________ can change.\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2775
+\clvertalt
+\cellx3135
+\clvertalt
+\cellx5595
+\clvertalt
+\cellx5955
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{identity\cell
+}{b.}{\cell
+}{state\cell
+}{c.}{\cell
+}{behavior\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{6.}{\tab }\plain \f0
+\fs22
+\cf1
+{The methods contained in an object that has been created from a class is its ___
+_______.\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx2775
+\clvertalt
+\cellx3135
+\clvertalt
+\cellx5595
+\clvertalt
+\cellx5955
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{identity\cell
+}{b.}{\cell
+}{state\cell
+}{c.}{\cell
+}{behavior\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{7.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following defines a constructor that initializes one attribute?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(name):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    this.name = name}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(this, name):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    name = this.name}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(name):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.name = name}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(self, name):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.name = name}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{8.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following defines a data class named Product with one attribute?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{@dataclass\par
+}\plain \b \f1
+\fs18
+\cf1
+{class Product:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    name:str = ""\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{@data class\par
+}\plain \b \f1
+\fs18
+\cf1
+{class Product:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    name:str = ""}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{@dataclass\par
+}\plain \b \f1
+\fs18
+\cf1
+{class Product(name):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.name = name}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{@dataclass\par
+}\plain \b \f1
+\fs18
+\cf1
+{class Product(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    name:str = self.name}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{9.}{\tab }\plain \f0
+\fs22
+\cf1
+{When you define a data class, Python generates\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{both an __init__() and a __post_int__() method\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{only an __init__() method\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{only a __post_init__() method\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{an __init__() method if you don\'92
+t code one\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{10.}{\tab }\plain \f0
+\fs22
+\cf1
+{You\'92
+ll need to code an __init__() method for a class if you need to\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{store objects created from the class within another class\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{store objects created from the class in a list\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{assign default values to one or more attributes of the class\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{set the default value of a class attribute to a mutable type\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{11.}{\tab }\plain \f0
+\fs22
+\cf1
+{If you want to execute code after an object is initialized, you can place the co
+de in the\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{__init__() method\cell
+}{c.}{\cell
+}{constructor\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{__post_init__() method\cell
+}{d.}{\cell
+}{all of the above\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{12.}{\tab }\plain \f0
+\fs22
+\cf1
+{In a method, the first parameter, which is usually named self, refers to the cur
+rent\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{class\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{method\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{parameter\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{13.}{\tab }\plain \f0
+\fs22
+\cf1
+{Given a class named Customer, which of the following creates a Customer object a
+nd assigns it to the variable named cust1:\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri-162\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{cust1 = new Customer()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{cust1 = Customer()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{cust1 = Customer.init()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{cust1 = Customer.create()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{14.}{\tab }\plain \f0
+\fs22
+\cf1
+{When you code the dot operator after an object, what can you access?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{the constructor of the object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{the iterator of the object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{the public attributes and methods of the object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{only the public methods of the object\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{15.}{\tab }\plain \f0
+\fs22
+\cf1
+{Given a variable named p that refers to a Product object, which of the following
+ statements accesses the price attribute of the Product object?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Product.price\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{p.price\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Product.price()\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{p.price()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{16.}{\tab }\plain \f0
+\fs22
+\cf1
+{Given a variable named cust that refers to a Customer object, which of the follo
+wing statements calls the getFullName() method of the object?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Customer.fullName}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{cust.fullName}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{Customer.getFullName()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{cust.getFullName()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{17.}{\tab }\plain \f0
+\fs22
+\cf1
+{When an object of one class stores one or more objects of another class, this is
+ known as\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{instantiation\cell
+}{c.}{\cell
+}{encapsulation\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{composition\cell
+}{d.}{\cell
+}{decorator\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{18.}{\tab }\plain \f0
+\fs22
+\cf1
+{To prevent another programmer from directly accessing the attributes of an objec
+t, you use\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{instantiation\cell
+}{c.}{\cell
+}{encapsulation\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{composition\cell
+}{d.}{\cell
+}{decorator\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{19.}{\tab }\plain \f0
+\fs22
+\cf1
+{To code a property that gets a private attribute, you use which of the following
+ decorators?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{@property\cell
+}{c.}{\cell
+}{@}\plain \i \f0
+\fs22
+\cf1
+{propertyName}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{@}\plain \i \f0
+\fs22
+\cf1
+{propertyName}\plain \f0
+\fs22
+\cf1
+{.getter\cell
+}{d.}{\cell
+}{@}\plain \i \f0
+\fs22
+\cf1
+{propertyName}\plain \f0
+\fs22
+\cf1
+{.setter\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{20.}{\tab }\plain \f0
+\fs22
+\cf1
+{To code a property that sets a private attribute, you use which of the following
+ decorators?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{@property\cell
+}{c.}{\cell
+}{@}\plain \i \f0
+\fs22
+\cf1
+{propertyName}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{@}\plain \i \f0
+\fs22
+\cf1
+{propertyName}\plain \f0
+\fs22
+\cf1
+{.getter\cell
+}{d.}{\cell
+}{@}\plain \i \f0
+\fs22
+\cf1
+{propertyName}\plain \f0
+\fs22
+\cf1
+{.setter\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{21.}{\tab }\plain \f0
+\fs22
+\cf1
+{You can\'92
+t access a private attribute\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{by using the dot operator followed by the attribute\'92
+s name\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{by calling a read-only property from the object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{by calling a method from the object\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{by using a constructor to create the object\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{22.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following will create a read-only property?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{coding only a getter method with the @property decorator\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{coding only a setter method with the @property decorator\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{coding getter and setter methods with the @readonly decorator\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{coding an attribute with the @readonly decorator\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-1\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{@dataclass\par
+}\plain \b \f1
+\fs18
+\cf1
+{class Rectangle:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    height:int\par
+}\plain \b \f1
+\fs18
+\cf1
+{    width:int\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{    def getPerimeter(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{        perimeter = self.height * 2 + self.width * 2\par
+}\plain \b \f1
+\fs18
+\cf1
+{        return perimeter\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{    def getArea(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{        area = self.height * self.width\par
+}\plain \b \f1
+\fs18
+\cf1
+{        return area\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{    def getStr(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{        return str(self.height) + " by " + str(self.width)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{23.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-1:}\plain \f0
+\fs22
+\cf1
+{ How many public attributes does this class define?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{1}\plain \f0
+\fs22
+\cf1
+{\cell
+}{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{3}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{2}\plain \f0
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{4}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{24.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-1:}\plain \f0
+\fs22
+\cf1
+{ How many public methods does this class define?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{1}\plain \f0
+\fs22
+\cf1
+{\cell
+}{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{3}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{2}\plain \f0
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{4}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{25.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-1}\plain \f0
+\fs22
+\cf1
+{: Which of the following is the constructor for this class?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(height, width):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.height = height\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.width = width}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(self, height, width):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.height = height\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.width = width\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(self, height:int, width:int):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.height = height\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.width = width}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def __init__(height:int, width:int):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.height = height\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.width = width}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{26.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-1}\plain \f0
+\fs22
+\cf1
+{: What is another way to code the getArea() method and have it perform the same 
+task?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def getArea(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    area = self.height * self.width\par
+}\plain \b \f1
+\fs18
+\cf1
+{    return}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def getArea(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    self.area = self.height * self.width\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def getArea(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{    return self.height * self.width}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{def getArea():\par
+}\plain \b \f1
+\fs18
+\cf1
+{    return height * width}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{27.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-1}\plain \f0
+\fs22
+\cf1
+{: If the Rectangle class is stored in a module named shapes, which of the follow
+ing imports the class and creates an object from it?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri-162\fi0
+\ql\tx2160
+\plain \b \f1
+\fs18
+\cf1
+{import shapes\par
+}\plain \b \f1
+\fs18
+\cf1
+{rectangle = Rectangle(10, 20)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri-162\fi0
+\ql\tx2160
+\plain \b \f1
+\fs18
+\cf1
+{import Rectangle from shapes\par
+}\plain \b \f1
+\fs18
+\cf1
+{rectangle = Rectangle(10, 20)\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri-162\fi0
+\ql\tx2160
+\plain \b \f1
+\fs18
+\cf1
+{from shapes import Rectangle\par
+}\plain \b \f1
+\fs18
+\cf1
+{rectangle = Rectangle(10, 20)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri-162\fi0
+\ql\tx2160
+\plain \b \f1
+\fs18
+\cf1
+{import Rectangle from shapes\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{rectangle = new Rectangle(10, 20)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-2\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{@dataclass\par
+}\plain \b \f1
+\fs18
+\cf1
+{class Die:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    __value:int = 1\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{    def getValue(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{        return self.__value\par
+}\plain \b \f1
+\fs18
+\cf1
+{                \par
+}\plain \b \f1
+\fs18
+\cf1
+{    def roll(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{        self.__value = random.randrange(1, 7)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{28.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-2:}\plain \f0
+\fs22
+\cf1
+{ Given a Die object named die, which of the following sets the __value attribute
+?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{die.__value = 1}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{die.value = 1}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{die.getValue()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{die.roll()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{29.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-2:}\plain \f0
+\fs22
+\cf1
+{ Given a Die object named die, which of the following will print the value of th
+e __value attribute to the console?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{print(die.getValue())\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{print(die.roll())}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{print(die.value)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{print(die.__value)}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-3\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{@dataclass\par
+}\plain \b \f1
+\fs18
+\cf1
+{class Multiplier:\par
+}\plain \b \f1
+\fs18
+\cf1
+{    num1:int = 0\par
+}\plain \b \f1
+\fs18
+\cf1
+{    num2:int = 0\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{    def getProduct(self):\par
+}\plain \b \f1
+\fs18
+\cf1
+{        return self.num1 * self.num2\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{def main():\par
+}\plain \b \f1
+\fs18
+\cf1
+{    m = Multiplier()\par
+}\plain \b \f1
+\fs18
+\cf1
+{    m.num1 = 7\par
+}\plain \b \f1
+\fs18
+\cf1
+{    m.num2 = 3\par
+}\plain \b \f1
+\fs18
+\cf1
+{    print(f"\{m.num1\} X \{m.num2\} = \{m.getProduct()\}")\par
+}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+{if __name__ == "__main__":\par
+}\plain \b \f1
+\fs18
+\cf1
+{    main()}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{30.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-3:}\plain \f0
+\fs22
+\cf1
+{ What is (are) the attributes of the class?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{num1, num2\cell
+}\plain \f0
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{m.num1, m.num2\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{m\cell
+}\plain \f0
+\fs22
+\cf1
+{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{getProduct()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{31.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-3:}\plain \f0
+\fs22
+\cf1
+{ What is (are) the methods of the class?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{num1, num2}\plain \f0
+\fs22
+\cf1
+{\cell
+}{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{m.num1, m.num2}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{m}\plain \f0
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{getProduct()}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{32.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 14-3:}\plain \f0
+\fs22
+\cf1
+{ When this code is executed, what does it print to the console?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{7 X 3 = 0\cell
+}\plain \f0
+\fs22
+\cf1
+{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{7 X 3 = 21\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{3 X 7 = 0}\plain \f0
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{3 X 7 = 21}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C\par
+\pard
+}}

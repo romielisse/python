@@ -1,0 +1,2768 @@
+{\rtf1\ansi \deff0{\fonttbl
+{\f0\froman\fcharset0\fprq2 Times New Roman;
+}{\f1\fmodern\fcharset0\fprq1 Courier New;
+}}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}\hyphauto1\deflang1033
+\marglsxn2070\margrsxn1080\margtsxn720\margbsxn1440\cols1\endnhere\colno1\colw9090\pard
+\brdrb\brdrs\brdrw120\brdrcf1
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs26
+\cf1
+{Chapter 05: How to test and debug a program\par
+}\plain \b \f0
+\fs26
+\cf1
+{Murach's Python Programming (2nd Edition)}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs36
+\cf1
+{\par
+}\plain \f0
+\fs36
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li-630\ri0\fi0
+\ql\plain \b \f0
+\fs22
+\cf1
+{MULTIPLE CHOICE}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{1.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which type of error prevents a program from compiling and running?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{exceptional\cell
+}{c.}{\cell
+}{runtime\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{syntax\cell
+}{d.}{\cell
+}{logic\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{2.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which type of error throws an exception that stops execution of the program?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{exceptional\cell
+}{c.}{\cell
+}{runtime\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{syntax\cell
+}{d.}{\cell
+}{logic\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{3.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following is not a common type of syntax error?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{forgetting a colon\cell
+}{c.}{\cell
+}{invalid variable names\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{forgetting to close a parentheses\cell
+}{d.}{\cell
+}{improper indentation\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{4.}{\tab }\plain \f0
+\fs22
+\cf1
+{When you plan the test runs for a program, you should do all but one of the foll
+owing. Which one is it?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{list the valid entries for each test run\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{list the invalid entries and unexpected user actions for each test run\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{list the expected exceptions for each test run\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{list the expected results for each test run\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{5.}{\tab }\plain \f0
+\fs22
+\cf1
+{When you trace the execution of a program, you insert print() functions at key p
+oints in the program. It makes sense for these functions to do all but one of the
+ following. Which one is it?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{display the name of the function that the print() function is in\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{display the values of the local variables in the function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{display the values of the global constants used by the function\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{display the values of the global variables used by the function\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{6.}{\tab }\plain \f0
+\fs22
+\cf1
+{What will the following statement display on the console if the sales_total vari
+able is equal to 123.75?\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120{    }\plain \b \f1
+\fs18
+\cf1
+{ print(f"\{sales_total = \}")\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{sales_total = 123.75}\plain \f0
+\fs22
+\cf1
+{\cell
+}{c.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{sales_total=123.75}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{\{sales_total = 123.75\}}\plain \f0
+\fs22
+\cf1
+{\cell
+}{d.}{\cell
+}\plain \b \f1
+\fs18
+\cf1
+{sales_total =}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{7.}{\tab }\plain \f0
+\fs22
+\cf1
+{Which of the following is }\plain \b \i \f0
+\fs22
+\cf1
+{not }\plain \f0
+\fs22
+\cf1
+{true about top-down coding and testing?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{You start with just a few functions and the code in the main() function that ca
+lls those functions.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{You add the code for a few functions at a time, including the code in the main(
+) function that calls those functions.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{You should always start by coding and testing the most difficult functions.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{Top-down testing makes debugging easier because you know that any errors are ca
+used by the code you\'92
+ve just added.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{8.}{\tab }\plain \f0
+\fs22
+\cf1
+{To test the functions of a module from the IDLE shell, you\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{run the module with varying input values\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{run the module and then call any function from the IDLE shell\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{run the module, import it into the IDLE shell, and then call any function from 
+the shell\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{call any function in the module by using the default namespace\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{9.}{\tab }\plain \f0
+\fs22
+\cf1
+{When you use the IDLE debugger, you start by setting a breakpoint\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{on a comment line\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{on the statement you believe is causing the bug\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{on a statement before the statement you think is causing the bug\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{on the function definition for the function that you think is causing the bug\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{10.}{\tab }\plain \f0
+\fs22
+\cf1
+{When the IDLE debugger reaches a breakpoint, you can do all but one of the follo
+wing. Which one is it?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{step through the program one statement at a time\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{run the program until the next breakpoint is reached\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{view the values of the local variables that are in scope\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{view the values of all the variables that you\'92
+ve stepped through\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{11.}{\tab }\plain \f0
+\fs22
+\cf1
+{The stack is available when an exception occurs. It displays a list of\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{the functions that have been called since the IDLE shell started\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{the functions that were called prior to the exception\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{all the local variables used by the program and their values\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{all the local and global variables used by the program and their values\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{12.}{\tab }\plain \f0
+\fs22
+\cf1
+{What line number of the following code contains an error and what type of error 
+is it?\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{1.  def sales_tax(amt)\par
+}\plain \b \f1
+\fs18
+\cf1
+{2.      sale = amt + (amt * .06)\par
+}\plain \b \f1
+\fs18
+\cf1
+{3.      return sale\par
+}\plain \b \f1
+\fs18
+\cf1
+{4.\par
+}\plain \b \f1
+\fs18
+\cf1
+{5.  def main():\par
+}\plain \b \f1
+\fs18
+\cf1
+{6.      print("Welcome to the 6% tax calculator!\\n")\par
+}\plain \b \f1
+\fs18
+\cf1
+{7.      total = int(input("Please enter the total amount: "))\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa240{8.      print("The total amount after tax is: ", sales_tax(total))\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{line 1, runtime error\cell
+}{c.}{\cell
+}{line 3, runtime error\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{line 1, syntax error\cell
+}{d.}{\cell
+}{line 8, logic error\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{13.}{\tab }\plain \f0
+\fs22
+\cf1
+{What line number of the following code contains an error and what type of error 
+is it?\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{1.  count = 1\par
+}\plain \b \f1
+\fs18
+\cf1
+{2.  while count <= 4:\par
+}\plain \b \f1
+\fs18
+\cf1
+{3.      print(count, end=" ")\par
+}\plain \b \f1
+\fs18
+\cf1
+{4.      i *= 1\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa240{5.  print("\\nThe loop has ended.") \par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{line 2, syntax error\cell
+}{c.}{\cell
+}{line 4, runtime error\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx4185
+\clvertalt
+\cellx4545
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{line 3, syntax error\cell
+}{d.}{\cell
+}{line 5, logic error\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{14.}{\tab }\plain \f0
+\fs22
+\cf1
+{Given the following code and its output:\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{1.  discount_rate = .1\par
+}\plain \b \f1
+\fs18
+\cf1
+{2.  item = 89.95\par
+}\plain \b \f1
+\fs18
+\cf1
+{3.  discount = item * discount_rate\par
+}\plain \b \f1
+\fs18
+\cf1
+{4.  print(f"The discount is $\{discount\}")\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \f0
+\fs22
+\cf1
+{Output:}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120{The discount on this item is $8.995000000000001 \par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa240\plain \f0
+\fs22
+\cf1
+{Which of the following would produce a user-friendly correct result?\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}{change line 1 to: }\plain \b \f1
+\fs18
+\cf1
+{discount_rate = 10%}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{change line 2 to:}\plain \b \f1
+\fs18
+\cf1
+{ item = int(89.95)\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{change line 3 to: }\plain \b \f1
+\fs18
+\cf1
+{discount = int(item * discount_rate)\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{change line 4 to: }\plain \b \f1
+\fs18
+\cf1
+{print(f"The discount is $\{round(discount, 2)\}")}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{D}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 5-1\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{1.  count = 1\par
+}\plain \b \f1
+\fs18
+\cf1
+{2.  item_total = 0\par
+}\plain \b \f1
+\fs18
+\cf1
+{3.  item = 0\par
+}\plain \b \f1
+\fs18
+\cf1
+{4.  while count < 4:\par
+}\plain \b \f1
+\fs18
+\cf1
+{5.      item = int(input("Enter item cost: "))\par
+}\plain \b \f1
+\fs18
+\cf1
+{6.      item_total += item\par
+}\plain \b \f1
+\fs18
+\cf1
+{7.      count += 1\par
+}\plain \b \f1
+\fs18
+\cf1
+{8.  average_cost = round(item_total / count)\par
+}\plain \b \f1
+\fs18
+\cf1
+{9.  print(f"Total cost: \{item_total\}\\nAverage cost: \{average_cost\}")}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{15.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 5-1}\plain \f0
+\fs22
+\cf1
+{: If the user enters 5, 10, and 15 at the prompts, the output is:\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li720\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{Total cost: 30 \par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li720\ri0\fi0
+\ql\sa120{Average cost: 8 \par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \f0
+\fs22
+\cf1
+{Which line should be changed to fix this logic error?\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}{change line 4 to: }\plain \b \f1
+\fs18
+\cf1
+{while count <= 4:}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{change line 6 to:}\plain \b \f1
+\fs18
+\cf1
+{ item_total += item - 1\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{change line 8 to: }\plain \b \f1
+\fs18
+\cf1
+{average_cost = round(item_total / (count - 1))\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{change line 1 to: }\plain \b \f1
+\fs18
+\cf1
+{count = 0}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{16.}{\tab }\plain \f0
+\fs22
+\cf1
+{Given the following code, if the user worked 45 hours at $10.00/hour, the output
+ is as shown below. \par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\plain \b \f1
+\fs18
+\cf1
+{1. def main(): \par
+}\plain \b \f1
+\fs18
+\cf1
+{2.     hours = float(input("How many hours did you work? "))\par
+}\plain \b \f1
+\fs18
+\cf1
+{3.     rate = float(input("What is your hourly rate? "))\par
+}\plain \b \f1
+\fs18
+\cf1
+{4.     if (hours > 40) and (rate < 15):\par
+}\plain \b \f1
+\fs18
+\cf1
+{5.         pay = (hours * rate) + (hours - 40 * rate * 1.5)\par
+}\plain \b \f1
+\fs18
+\cf1
+{6.     else:\par
+}\plain \b \f1
+\fs18
+\cf1
+{7.         pay = hours * rate\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120{8.     print(f"Your pay is: $\{round(pay, 2)\}")\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \f0
+\fs22
+\cf1
+{Output:}\plain \b \f1
+\fs18
+\cf1
+{\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi0
+\ql\sa120{Your pay is: $-105.0\par
+}\plain \b \f1
+\fs18
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \f0
+\fs22
+\cf1
+{Which line should be changed to fix this logic error?\par
+}\plain \b \f1
+\fs18
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{a.}{\cell
+}{change lines 2 and 3 to receive integer values instead of floating-point\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}{change line 4 to: }\plain \b \f1
+\fs18
+\cf1
+{if (hours > 40) or (rate < 15):\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{change line 5 to: }\plain \b \f1
+\fs18
+\cf1
+{pay = (40 * rate) + ((hours - 40) * rate * 1.5)\cell
+}\row
+\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}{change line 8 to: }\plain \b \f1
+\fs18
+\cf1
+{print("Your pay is: $ ", str(round(pay, 2)))}\plain \f0
+\fs22
+\cf1
+{\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\sa120\plain \b \f0
+\fs22
+\cf1
+{Code Example 5-2\par
+}\plain \b \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li90\ri0\fi-90
+\ql\plain \b \f1
+\fs18
+\cf1
+{1. # This application displays a student's score after a 5-point curve\par
+}\plain \b \f1
+\fs18
+\cf1
+{2.\par
+}\plain \b \f1
+\fs18
+\cf1
+{3.  def display_info(fname, lname, score):\par
+}\plain \b \f1
+\fs18
+\cf1
+{4.      print("Hello, ", fname, " ", Lname)\par
+}\plain \b \f1
+\fs18
+\cf1
+{5.      print("Your score on this exam is ", score)\par
+}\plain \b \f1
+\fs18
+\cf1
+{6.      score = score + 5\par
+}\plain \b \f1
+\fs18
+\cf1
+{7.\par
+}\plain \b \f1
+\fs18
+\cf1
+{8.  def main():\par
+}\plain \b \f1
+\fs18
+\cf1
+{9.      first = input("first name: ")\par
+}\plain \b \f1
+\fs18
+\cf1
+{10.     last = input("last name: ")\par
+}\plain \b \f1
+\fs18
+\cf1
+{11.     grade = input("exam score: ")\par
+}\plain \b \f1
+\fs18
+\cf1
+{12.     display_info(first, last, score)\par
+}\plain \b \f1
+\fs18
+\cf1
+{13.    \par
+}\plain \b \f1
+\fs18
+\cf1
+{14. # if started as the main module, call the main function\par
+}\plain \b \f1
+\fs18
+\cf1
+{15. if __name__ == "__main__":\par
+}\plain \b \f1
+\fs18
+\cf1
+{16.     main()}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{17.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 5-2}\plain \f0
+\fs22
+\cf1
+{: What is the error in the main() function?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{The input statement on line 11 gets a variable named grade but sends in an unde
+fined variable named score on line 12\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{The input statement on line 11 does not define grade as an int\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}{The function call on line 12 should send in fname and lname as arguments, not l
+ast and first\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{There are no errors in main()\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{A}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{18.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 5-2}\plain \f0
+\fs22
+\cf1
+{: What is the first error in the display_info() function?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{The arguments on line 3 should be first and last, not fname and lname\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{The variable Lname on line 4 does not exist\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{The print statement on line 4 should use an f-string instead of commas\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{You cannot add a number to itself, as on line 6\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{19.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 5-2}\plain \f0
+\fs22
+\cf1
+{: What is the error on line 6?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{You cannot change the value of score after it has been displayed..\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{You cannot add a number to itself.\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{The variable score has been input as a string so it must be converted to an int 
+or float.\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{There is no error on line 6\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{C}\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs22
+\cf1
+{\par
+}\plain \f0
+\fs22
+\cf1
+\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi-630
+\ql\sa120\tqr\tx-180\tx0
+{\tab }\plain \f0
+\fs22
+\cf1
+{20.}{\tab }\plain \f0
+\fs22
+\cf1
+{Refer to }\plain \b \f0
+\fs22
+\cf1
+{Code Example 5-2}\plain \f0
+\fs22
+\cf1
+{: Assuming the coding errors have been fixed, what is the logic error in this pr
+ogram?\par
+}\plain \f0
+\fs22
+\cf1
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{a.}{\cell
+}{The arguments are listed in the wrong order.\cell
+}\row
+\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{b.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{The curve is calculated after the score has been displayed.\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{c.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{The display_info() function should be called before the input statements on line
+s 9-11.\cell
+}\row
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\trowd \trql\trgaph45\trleft-45\trautofit1
+\clvertalt
+\cellx315
+\clvertalt
+\cellx8415
+\pard
+\intbl \widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql{d.}{\cell
+}\pard
+\intbl \widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql{There is no logic error in this program.\cell
+}\row
+\pard
+\widctlpar\keep\hyphpar0
+\li360\ri0\fi-360
+\ql\pard
+\widctlpar\keep\hyphpar0
+\li0\ri0\fi0
+\ql\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\plain \f0
+\fs2
+\cf1
+{\par
+}\plain \f0
+\fs2
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\sa1\plain \f0
+\fs12
+\cf1
+{\par
+}\plain \f0
+\fs12
+\cf1
+\pard
+\nowidctlpar\hyphpar0
+\li0\ri0\fi0
+\ql\tx0\tx634\tx1958\tx2592\tx3916\tx4550\tx5874\tx6508
+\plain \f0
+\fs22
+\cf1
+{ANS:\tab }\plain \f0
+\fs22
+\cf1
+{B\par
+\pard
+}}
